@@ -13,3 +13,23 @@
    python -m venv venv
    source venv/bin/activate  # 或 venv\\Scripts\\activate (Windows)
    pip install -r requirements.txt
+若要使用 PPO，請另外安裝 stable-baselines3。
+
+執行：
+
+python traffic_energy_rl.py
+
+
+程式會先執行內建測試，接著訓練或使用 fallback policy，最後進行評估並顯示結果圖。
+
+檔案
+
+traffic_energy_rl.py：主程式（環境、策略、測試、訓練、評估、繪圖）。
+
+requirements.txt：建議安裝套件。
+
+延伸
+
+若要連接更真實的模擬器，可替換環境動態（例如 SUMO、CityLearn）。
+
+可將 fallback policy 換成簡單 Q-learning 或自行實作的離線訓練流程。
