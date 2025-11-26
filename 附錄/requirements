@@ -1,0 +1,10 @@
+numpy
+matplotlib
+gym  # or gymnasium, see note below
+# optional for PPO training:
+# stable-baselines3
+備註：
+
+若使用 gymnasium 請改為 pip install gymnasium 並調整 import（程式內已嘗試相容 gym / gymnasium）。
+
+若要啟用 PPO 訓練，請安裝 stable-baselines3（並確保相容的 PyTorch 版本）。
